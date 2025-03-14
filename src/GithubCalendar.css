@@ -1,0 +1,13 @@
+/* GitHub Calendar CSS */
+.calendar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px; /* Adjust height as needed */
+    font-family: Arial, sans-serif;
+  }
+  
+  .calendar a {
+    text-decoration: none;
+  }
+  
