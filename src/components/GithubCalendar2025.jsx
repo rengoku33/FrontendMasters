@@ -1,9 +1,15 @@
 import React from 'react';
 import Calendar from 'react-github-contribution-calendar';
 
-const val2025 = { '2024-12-29': 1, '2024-12-30': 1, '2024-12-31': 1 };
+const val2025 = { '2024-12-29': 3, '2024-12-30': 3, '2024-12-31': 3,
+// march
+'2025-03-30': 1,
+
+// april
+
+ };
 const until2025Dec31 = '2025-12-31';
-const panelColors = ['#EEEEEE', 'white', '#FF0000'];
+const panelColors = ['#EEEEEE', '#b81c1d', '#ebb309', 'white'];
 
 const GithubCalendar2025 = () => {
     return (

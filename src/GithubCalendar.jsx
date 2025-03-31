@@ -31,7 +31,7 @@ const GithubCalendar = () => {
             <div className='flex gap-3 justify-center col-span-2'>
                 Mission:
                 <ul>
-                    <li>1. software enginner by May 2025 (chennai or remote)</li>
+                    <li>1. software enginner by May 2025 (chennai or bangalore)</li>
                     <li>2. Google, Microsoft, Zoro by 2027</li>
                     <li>3. FullTime kingdom of science by 2033</li>
                 </ul>
