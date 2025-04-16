@@ -17,15 +17,13 @@ const GithubCalendar = () => {
             <GithubCalendar2024 />
             <GithubCalendar2025 />
             <div className='flex gap-3 justify-center col-span-2'>
-                <div className='w-7 h-7 bg-red-700'></div> = Progress towards mission
-                <div className='w-7 h-7 bg-yellow-500'></div> = Progress towards business / kingdom
+                <div className='w-7 h-7 bg-red-700'></div> = Qualify
+                <div className='w-7 h-7 bg-yellow-500'></div> = Fastest Lap 
             </div>
             <div className='flex gap-3 justify-center col-span-2'>
-                I am taking 3 constants with me from the CBE mission:
+                One Rule from CBE Mission:
                 <ul>
                     <li>5AM. The 5 Morning Ritual - eye ex, routine, stretch, cardio, DSA / Tech News</li>
-                    <li>6PM. Wrestling Discipline - eye ex, warm up, strength training</li>
-                    <li>8PM. The Primeagen - prime time / tech stack</li>
                 </ul>
             </div>
             <div className='flex gap-3 justify-center col-span-2'>
@@ -36,9 +34,7 @@ const GithubCalendar = () => {
                     <li>3. FullTime kingdom of science by 2033</li>
                 </ul>
             </div>
-            <div className='flex gap-3 justify-center col-span-2'>
-                making money should be like watching grass grow, establish a business and keep building kingdom of science
-            </div>
+            
             <GithubCalendar2026 />
             <GithubCalendar2027 />
             <GithubCalendar2028 />
