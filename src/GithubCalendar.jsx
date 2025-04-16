@@ -17,8 +17,8 @@ const GithubCalendar = () => {
             <GithubCalendar2024 />
             <GithubCalendar2025 />
             <div className='flex gap-3 justify-center col-span-2'>
-                <div className='w-7 h-7 bg-red-700'></div> = Qualify
-                <div className='w-7 h-7 bg-yellow-500'></div> = Fastest Lap 
+                <div className='w-7 h-7 bg-yellow-300'></div> = Qualify
+                <div className='w-7 h-7 bg-green-300'></div> = Fastest Lap 
             </div>
             <div className='flex gap-3 justify-center col-span-2'>
                 One Rule from CBE Mission:
