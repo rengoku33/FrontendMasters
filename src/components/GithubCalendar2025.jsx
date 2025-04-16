@@ -10,7 +10,7 @@ const val2025 = { '2024-12-29': 3, '2024-12-30': 3, '2024-12-31': 3,
 
  };
 const until2025Dec31 = '2025-12-31';
-const panelColors = ['#EEEEEE', '#b81c1d', '#ebb309', 'white'];
+const panelColors = ['#EEEEEE', '#f9d501', '#43d93f', 'white'];
 
 const GithubCalendar2025 = () => {
     return (
