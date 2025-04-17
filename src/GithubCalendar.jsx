@@ -17,8 +17,9 @@ const GithubCalendar = () => {
             <GithubCalendar2024 />
             <GithubCalendar2025 />
             <div className='flex gap-3 justify-center col-span-2'>
-                <div className='w-7 h-7 bg-yellow-300'></div> = Qualify
-                <div className='w-7 h-7 bg-green-300'></div> = Fastest Lap 
+                <div className='w-7 h-7 bg-purple-500'></div> = DNF 
+                <div className='w-7 h-7 bg-yellow-400'></div> = Qualify
+                <div className='w-7 h-7 bg-green-400'></div> = Fastest Lap 
             </div>
             <div className='flex gap-3 justify-center col-span-2'>
                 One Rule from CBE Mission:
@@ -29,9 +30,7 @@ const GithubCalendar = () => {
             <div className='flex gap-3 justify-center col-span-2'>
                 Mission:
                 <ul>
-                    <li>1. software enginner by May 2025 (chennai or bangalore)</li>
-                    <li>2. Google, Microsoft, Zoro by 2027</li>
-                    <li>3. FullTime kingdom of science by 2033</li>
+                    <li>1. software enginner by May 2025 (zoro or quit)</li>
                 </ul>
             </div>
             
