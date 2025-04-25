@@ -22,15 +22,11 @@ const GithubCalendar = () => {
                 <div className='w-7 h-7 bg-green-400'></div> = Fastest Lap 
             </div>
             <div className='flex gap-3 justify-center col-span-2'>
-                One Rule from CBE Mission:
-                <ul>
-                    <li>5AM. The 5 Morning Ritual - eye ex, routine, stretch, cardio, DSA / Tech News</li>
-                </ul>
-            </div>
-            <div className='flex gap-3 justify-center col-span-2'>
                 Mission:
                 <ul>
-                    <li>1. software enginner by May 2025 (zoro or quit)</li>
+                    <li>1. 5AM and 7PM two training sessions</li>
+                    <li>2. software enginner by May 2025</li>
+                    <li>3. hunt senior software enginner at Zoho, Google, Microsoft by 2027</li>
                 </ul>
             </div>
             
