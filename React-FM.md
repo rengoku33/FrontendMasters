@@ -25,6 +25,11 @@ extra checks: (will give warning of bad cope practices, if packages, fns are dep
 
 ### react dev tools
 react dev tools is useful to inspect component and state changes
-$r - last select component in inspector
-$0 - last dom selected in inspector
+$r - last select component in inspector\
+$0 - last dom selected in inspector\
 Profiler > (falmegraph / ranked) check component rendering time and performance
+
+## lazy loading
+split build into chunks and render them only when its route is visited
+<img width="820" height="640" alt="image" src="https://github.com/user-attachments/assets/62535178-e27a-4f82-957b-c43752dc790a" />
+
