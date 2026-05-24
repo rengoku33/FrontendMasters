@@ -1,7 +1,10 @@
 ## Hooks
 ### useRef
-- Frozen object, only "current" can be modified
-- prevents rerender by persisting
+- Frozen stable object, only "current" can be modified (prevents rerender when .current state changes)\
+  <img width="28%" alt="image" src="https://github.com/user-attachments/assets/a9863c5c-f599-4056-b70e-c87a90c27f3e" />
+  <img width="28%" alt="image" src="https://github.com/user-attachments/assets/b2f76498-e568-4de2-8393-6afc188b79ab" />
+- Also provides DOM access\
+  <img width="36%" alt="image" src="https://github.com/user-attachments/assets/8e113b34-a047-42d4-befc-24c68723b251" />
 
 ### useEffect
 - runs background tasks based on dependency array
@@ -9,12 +12,15 @@
 
 ### useState
 - state and setState with init value (component which uses it will rerender)
+<img width="30%" alt="image" src="https://github.com/user-attachments/assets/d1269544-7abf-4756-ae99-07b2da83924a" />
 
 ### useContext
 - global state management wrapped with provider (prevent prop drilling)
+- every component that calls "useContext" will rerender when context changes (their childer will re-render too, unless memoized) (SPLIT context like: ErrorContext, ApplicationContext - to prevent entire parent componet rerender and reduce blast radius)
 
-### useReducer and useSelector
-- reducer is basically a function which is used to like update states, selector to fetch data from store
+### useReducer
+- reducer is basically a function which updates complex/multiple states\
+  <img width="36%" alt="image" src="https://github.com/user-attachments/assets/30fa7a82-6dbb-4959-869c-ed57555d59a7" /><img width="30%" alt="image" src="https://github.com/user-attachments/assets/27e64a31-716e-44d7-a809-8b7350922a5e" />
 
 ### useMemo (memoize a value) && useCallback (memoize a fn)
 - execute once and prevent rerender unless and until the values in dep array changes
