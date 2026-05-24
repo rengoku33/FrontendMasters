@@ -46,3 +46,7 @@ split build into chunks and render them only when its route is visited
 ## React Compiler
 A build tool installed through npm amd add to vite config\
 It automatically optimizes React app at build time by handling memoization, eliminating the need for manual useMemo, useCallback, and React.memo
+
+## Vite build process
+- bundler (doesnt bundle on dev mode)
+- .1. build dependency graph (tree structure of file and components), 2. Tree shaking (unused export, dead code), 3. chunks (code split based on imports / shared modules / libraries). 4. when request is hit, it loads main chunk and its dependency chunks... then loads the rest on demand
