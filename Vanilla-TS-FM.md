@@ -3,6 +3,40 @@
 
 
 # Theory
+## Higher order and callback fns
+- A fn that accepts one or more functions as arguments or returns a fn is a HOF
+- A fn that is passed as an argument to another fn (executed by literally calling it)
+
+## Arrow functions
+another way of declaring functions... they are exactly the same as regular functions but with a few limitations:
+- cannot be used as constructors
+<img width="905" height="484" alt="image" src="https://github.com/user-attachments/assets/2e30808f-96ca-4f34-abd0-210416b87f36" />
+
+- hoisting (V) - they are hoisted but not in a useful way
+ 
+<img width="40%" alt="image" src="https://github.com/user-attachments/assets/f9d6fc14-4572-48d5-a227-dea2c4ebdada" />
+<img width="47%" alt="image" src="https://github.com/user-attachments/assets/29b5c9f8-ec4a-445e-8433-0d424f2a7670" />
+
+- cant access outer scope using this like regular methods
+
+<img width="45%" alt="image" src="https://github.com/user-attachments/assets/94a125d5-218d-4050-83b1-253641232def" />
+
+## hoisting
+Before the code is executed, JS scans declarations and sets up memory for them
+| Declaration Type      | Hoisted?            | Accessible Before Declaration? |
+| --------------------- | ------------------- | ------------------------------ |
+| `function foo(){}`    | ✅ Fully             | ✅ Yes                          |
+| `var x`               | ✅ Declaration only  | ✅ Yes (`undefined`)            |
+| `let x`               | ✅                   | ❌ ReferenceError               |
+| `const x`             | ✅                   | ❌ ReferenceError               |
+| `const fn = () => {}` | Variable is hoisted | ❌ ReferenceError               |
+| `var fn = () => {}`   | Variable is hoisted | ❌ TypeError (`undefined`)      |
+
+The reason why referenceError occurs eventhough const and let are hoisted is due to "Temporal Dead Zone", basically a JS rule which prevents the call before declaration is seen (top down approach)
+<img width="625" height="218" alt="image" src="https://github.com/user-attachments/assets/2ab8b436-b194-4c1f-b3e1-d1d1a8041042" />
+
+
+
 ## nullish coalescing operator 
 <img width="48%" alt="image" src="https://github.com/user-attachments/assets/7c9013e1-c67d-4afd-b327-8cb36981d921" />
 <img width="48%" alt="image" src="https://github.com/user-attachments/assets/42435b96-15a1-4d16-8720-046908f6cb76" />
