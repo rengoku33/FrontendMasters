@@ -18,5 +18,18 @@ Number.isInteger(num)
 <img width="260" height="108" alt="image" src="https://github.com/user-attachments/assets/53552626-fdd9-4064-b71a-6d86b77e3ba1" />
 <img width="279" height="156" alt="image" src="https://github.com/user-attachments/assets/421261a9-bd96-464a-b211-f31debecc535" />
 
+## typeof
+| Operand Type | `typeof` Result | Notes |
+| :--- | :--- | :--- |
+| Number | `"number"` | Includes `NaN` and `Infinity` |
+| String | `"string"` | Includes numeric strings |
+| Boolean | `"boolean"` | |
+| Undefined | `"undefined"` | Safe for undeclared variables |
+| Function | `"function"` | |
+| Object | `"object"` | Includes arrays, dates, regex |
+| Array | `"object"` | Use `Array.isArray()` instead |
+| Null | `"object"` | Historical bug; use `=== null` |
+| BigInt | `"bigint"` | |
+| Symbol | `"symbol"` | |
 
-
+typeof null // object
