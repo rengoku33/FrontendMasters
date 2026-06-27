@@ -4,7 +4,7 @@ basically the browser's main thread does everything
 2. React - component render/rerender
 3. Event handling (clicks, inputs)
 4. All JS execution (synchronous)
-now if we block this JS execution, boom (UI freezes)... webworkers can solve this by "moving heavy JS computation of the main thread"\
+now if we block this JS execution, boom (UI freezes)... webworkers can solve this by "moving heavy JS computation of the main thread"  
 
 usecases: 
 - image, data processing / computations / heavy json parsing
@@ -29,10 +29,30 @@ a small JavaScript library that lets you build interactive web apps using mostly
 ## Event emitter:
 An Event Emitter is a vanilla JS pattern where: One part of your app emits events, and other parts listen to them.\
 Emitter → "something happened"\
-Listener → reacts to that event\\
+Listener → reacts to that event\
 
 React prefers: 
-(props, 
-state, 
-context) 
+(props, state, context) 
 so you dont really use them but you can though...
+
+## Performace: (personal opinion)
+### code quality
+  - algorithmic complexity (maps instead of arrays for searching)
+  - reuse components, functions
+  - memoize rather than making API calls where needed
+  - image optimization (webp)
+  - others done in build process of most frameworks (tree shaking[exports, modules, components, functions, variables], minification)
+
+### rendering
+- lazy loading (components when on viewport)
+- lazy loading (route level) / chunk rendering (chunks are splitted based on route and rendered accordingly)
+- reduce DOM size and depth (preventing nested divs)
+- React (server compnents) (useMemo, useCallback)
+- SSR (browser sends DOM rather than bundle), SSG (preload html and static components), ISR and a whole lot more 
+
+### memory
+- debouncing (delay execution until activity stops) - search and validation
+- webworkers (run logic off the main thread) - encryption
+- clear leaks (objects / events that are no longer needed but not cleared yet so they are still accessible)
+
+
