@@ -21,6 +21,14 @@ another way of declaring functions... they are exactly the same as regular funct
 
 <img width="45%" alt="image" src="https://github.com/user-attachments/assets/94a125d5-218d-4050-83b1-253641232def" />
 
+## closures
+A nested function inside a function which has access to its outer fn's variables,  
+also stores memory based on its instance   
+<img width="42%" alt="image" src="https://github.com/user-attachments/assets/7861349e-8713-4d40-b02c-f05ecc8ee8e2" />
+<img width="42%" alt="image" src="https://github.com/user-attachments/assets/2b541ec9-8d7e-4fdd-8f2c-414a47569cb5" />
+
+
+
 ## hoisting
 Before the code is executed, JS scans declarations and sets up memory for them
 | Declaration Type      | Hoisted?            | Accessible Before Declaration? |
