@@ -43,6 +43,11 @@ Profiler > (falmegraph / ranked) check component rendering time and performance
 split build into chunks and render them only when its route is visited
 <img width="520" height="340" alt="image" src="https://github.com/user-attachments/assets/62535178-e27a-4f82-957b-c43752dc790a" />
 
+## react server components:
+SSR - server renders and sends HTML -> client browser parses HTML to DOM  
+RSC - server sends RSC payload (serialized component) -> client browser creates / updates DOM  
+both happens at request time unlike SSG which happens at build time
+
 ## React Compiler
 A build tool installed through npm amd add to vite config\
 It automatically optimizes React app at build time by handling memoization, eliminating the need for manual useMemo, useCallback, and React.memo
