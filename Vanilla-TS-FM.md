@@ -48,6 +48,11 @@ Before the code is executed, JS scans declarations and sets up memory for them
 The reason why referenceError occurs eventhough const and let are hoisted is due to "Temporal Dead Zone", basically a JS rule which prevents the call before declaration is seen (top down approach)
 <img width="625" height="218" alt="image" src="https://github.com/user-attachments/assets/2ab8b436-b194-4c1f-b3e1-d1d1a8041042" />
 
+## API calls
+fetch returns promise with entire object (status, body, headers...)  
+<img width="55%" alt="image" src="https://github.com/user-attachments/assets/8d9e4d8b-240e-4552-aa0c-c722f1153d4e" />
+
+
 ## nullish coalescing operator 
 <img width="48%" alt="image" src="https://github.com/user-attachments/assets/7c9013e1-c67d-4afd-b327-8cb36981d921" />
 <img width="48%" alt="image" src="https://github.com/user-attachments/assets/42435b96-15a1-4d16-8720-046908f6cb76" />
