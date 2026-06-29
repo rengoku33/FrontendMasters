@@ -52,6 +52,14 @@ The reason why referenceError occurs eventhough const and let are hoisted is due
 fetch returns promise with entire object (status, body, headers...)  
 <img width="55%" alt="image" src="https://github.com/user-attachments/assets/8d9e4d8b-240e-4552-aa0c-c722f1153d4e" />
 
+Promise is a general JavaScript object for representing the eventual result of any asynchronous operation. (not just for API calls but for async programming in general)  
+fetch() is a browser (and modern Node.js) API for making HTTP requests, and it returns a Promise.   
+States: Pending, Fulfilled, Rejected  
+<img width="33%" alt="image" src="https://github.com/user-attachments/assets/dbc2880d-5534-47c1-9bd9-3c12c072497f" />
+<img width="33%" alt="image" src="https://github.com/user-attachments/assets/ebea3e6a-6a40-4e83-a86d-7e239b698d7d" />
+<img width="33%" alt="image" src="https://github.com/user-attachments/assets/77a8bfc8-ccd5-44c1-86cc-78b12d7f1648" />
+
+
 
 ## nullish coalescing operator 
 <img width="48%" alt="image" src="https://github.com/user-attachments/assets/7c9013e1-c67d-4afd-b327-8cb36981d921" />
