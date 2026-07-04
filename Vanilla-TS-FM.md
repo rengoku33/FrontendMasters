@@ -1,6 +1,12 @@
 # DSA
 <img width="1130" height="710" alt="image" src="https://github.com/user-attachments/assets/3c91ec8f-0bed-4abf-b68c-02d32e88a0bd" />
 
+Searching:  
+- linear search - O(n) (walk one by one)
+- binary search - O(log n) (must be sorted - check middle and decrease window)
+
+Sorting:
+
 
 # Theory
 ## Higher order and callback fns
