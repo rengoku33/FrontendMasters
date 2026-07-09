@@ -1,14 +1,3 @@
-# DSA
-<img width="1130" height="710" alt="image" src="https://github.com/user-attachments/assets/3c91ec8f-0bed-4abf-b68c-02d32e88a0bd" />
-
-Searching:  
-- linear search - O(n) (walk one by one)
-- binary search - O(log n) (must be sorted - check middle and decrease window)
-
-Sorting:
-
-
-# Theory
 ## Higher order and callback fns
 - A fn that accepts one or more functions as arguments or returns a fn is a HOF
 - A fn that is passed as an argument to another fn (executed by literally calling it)
