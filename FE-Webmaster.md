@@ -55,4 +55,10 @@ so you dont really use them but you can though...
 - webworkers (run logic off the main thread) - encryption
 - clear leaks (objects / events that are no longer needed but not cleared yet so they are still accessible)
 
+## security
+### HMAC
+(Hash-based Message Authentication Code) validation is a cryptographic security process that uses a shared secret key and a hash function (like SHA-256).  
+<img width="720" height="300" alt="image" src="https://github.com/user-attachments/assets/bb7db744-94df-466d-8568-dc9f4518e33f" />  
+In UI we use lot of factors like timestamp, req body, query params, secret key and hash fn… to generate signature and then the same in BE… if we could alter the payload before signature generation then we can bypass the security.
+
 
