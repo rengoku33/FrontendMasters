@@ -1,3 +1,33 @@
+### Box layout
+<img width="1636" height="881" alt="image" src="https://github.com/user-attachments/assets/704f0a19-cc75-4c21-9879-2e4a3b9fab2c" />
+
+### Box properties
+<img width="1421" height="568" alt="image" src="https://github.com/user-attachments/assets/46764746-2ef4-41d3-862e-ba20e71632c6" />  
+
+**Box size:**   
+- **intrinsic:** the height and width of the box is determined by the content  
+- **restricted:** the height and width is set via CSS / or determined by parent box  
+
+**Box type:**  
+- **Block:** 100% of parent width, height is intrinsic (determined by content) (Top to Bottom)  
+<img width="40%" alt="image" src="https://github.com/user-attachments/assets/ce8edf9a-d236-4457-9a92-bf204ea8e5f0" />  
+
+- **Inline:** width and height is intrinsic, render as a string (Left to Right)  
+<img width="40%" alt="image" src="https://github.com/user-attachments/assets/5995ef57-c3f3-4bdf-add5-136a16a072b1" />
+
+`They do not respond to height and width properties` but padding and margin properties work thus achieving the goal but content width is unchanged   
+
+- **Anonymous:** if some text is not wrapped in anything it takes anonymous block  
+<img width="33%" alt="image" src="https://github.com/user-attachments/assets/3fbc644f-6760-4270-a12e-726307519079" />  
+
+the width of an element can vary based on the type of box  
+<img width="1279" height="739" alt="image" src="https://github.com/user-attachments/assets/cbef8047-0b0c-4495-bdcb-8f3c35ca437a" />
+
+
+<hr>
+<hr>
+<hr>
+
 ## Webworkers
 basically the browser's main thread does everything
 1. DOM rendering
