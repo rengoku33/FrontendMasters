@@ -1,14 +1,15 @@
-### Box layout
+# Box Box Box model
+## Box layout
 <img width="1636" height="881" alt="image" src="https://github.com/user-attachments/assets/704f0a19-cc75-4c21-9879-2e4a3b9fab2c" />
 
-### Box properties
+## Box properties
 <img width="1421" height="568" alt="image" src="https://github.com/user-attachments/assets/46764746-2ef4-41d3-862e-ba20e71632c6" />  
 
-**Box size:**   
+### Box size:   
 - **intrinsic:** the height and width of the box is determined by the content  
 - **restricted:** the height and width is set via CSS / or determined by parent box  
 
-**Box type:**  
+### Box type:  
 - **Block:** 100% of parent width, height is intrinsic (determined by content) (Top to Bottom)  
 <img width="40%" alt="image" src="https://github.com/user-attachments/assets/ce8edf9a-d236-4457-9a92-bf204ea8e5f0" />  
 
@@ -21,8 +22,28 @@
 <img width="33%" alt="image" src="https://github.com/user-attachments/assets/3fbc644f-6760-4270-a12e-726307519079" />  
 
 the width of an element can vary based on the type of box  
-<img width="1279" height="739" alt="image" src="https://github.com/user-attachments/assets/cbef8047-0b0c-4495-bdcb-8f3c35ca437a" />
+<img width="1279" height="739" alt="image" src="https://github.com/user-attachments/assets/cbef8047-0b0c-4495-bdcb-8f3c35ca437a" />  
 
+# Formatting context
+Basically consider it as a canvas where elements are ordered and placed based on the family it belongs to... ex: flex, grid, inline, block  
+### Display properties:  
+block, inline, inline-block, flex  
+- **block:** start on a new line with 100% of parent width, height is intrinsic (determined by content) (Top to Bottom)
+- **inline:** width and height is intrinsic, render as a string (Left to Right) , (padding and margin paradox: left and right will push the content but top and bottom wont)
+  these two are OGs, others are just derivatives of these
+- **inline block:** similar to inline but height and width are adjustable
+- **flex:** inherits block but content inside is arranged into columns,
+  it contains the following parent props:
+  - justify-content:   center (align the content inside in the main axis - horizontal when flex direction is row)
+  - align-items:       center (align the content inside in the cross axis - vertical when flex direction is row)
+  - flex-direction: column (change it one below other - default is row)
+  - flex-wrap: wrap (stop items from compressing in same line - default no wrap)
+    - only then "align-content: flex-start" is unlocked to align items (similar to justify-content) and use "gap: 1em" to ad space between each items
+  it contains following child props:
+- flex-grow: 1 (on a single item to increase its size to fill the outer continaer)
+- flex-shrink: 3 (to make it shrink faster on screen adapt or "0" to not shrink at all)
+- flex-basis: 300px (to override the width of a container)
+- align-self: center (to change the position of the item to flex-start(top), flex-end(down)) 
 
 <hr>
 <hr>
