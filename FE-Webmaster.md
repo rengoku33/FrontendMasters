@@ -45,6 +45,32 @@ block, inline, inline-block, flex
 - flex-basis: 300px (to override the width of a container)
 - align-self: center (to change the position of the item to flex-start(top), flex-end(down)) 
 
+# Position
+RTL - right to left, LTR - left to right (contents rendered on screen, eg: arabic is LTR)  
+
+## Position: static
+- appled by default
+<img width="1022" height="549" alt="image" src="https://github.com/user-attachments/assets/4dc35069-10f7-4785-9de5-50fdc5451999" />
+
+## Position: relative
+- initially the browser positions it and renders as normal flow
+- and then final positon (offset) is applied through top, right, left, bottom properties
+- the offset doesnt affect the position of any other elements
+<img width="1002" height="481" alt="image" src="https://github.com/user-attachments/assets/e9a20433-03d2-46fa-b88d-dbeff36369a0" />
+
+### containing block  
+<img width="1044" height="648" alt="image" src="https://github.com/user-attachments/assets/23754abd-aec7-4946-a78c-1921aaa01d48" />  
+
+### Position: absolute
+- the element is removed from the notmal flow
+- it is positioned relative to its closest ancestor (if one exists), otherwise relative to initial containing block
+- no space is reserved for the element and final position is determined by top, right, left, bottom
+<img width="1121" height="690" alt="image" src="https://github.com/user-attachments/assets/8dcda4df-d3cc-4cb7-b5c5-00340b6786eb" />
+
+### Position: fixed
+- element stays in the viewport
+
+
 <hr>
 <hr>
 <hr>
